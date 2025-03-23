@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh; /* Full viewport height */
+        }
+
+        .left {
+            width: 40%; /* Adjust width as needed */
+            height: 100%;
+        }
+
+        .full-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the space */
+        }
+
+        .right {
+            width: 60%; /* Adjust width as needed */
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers content vertically */
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            color: grey;
+        }
+
+
+        .navbar {
+          width: 100%;
+          background-color: #333; /* Dark background */
+          position: fixed; /* Stays at the top */
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center; /* Centers the buttons */
+          align-items: center;
+          padding: 15px 0;
+      }
+
+      /* Button Style */
+      .nav-button {
+          background-color: #008CBA; /* Blue color */
+          color: white;
+          padding: 12px 20px;
+          margin: 0 10px;
+          text-decoration: none;
+          font-size: 18px;
+          border-radius: 5px;
+          display: inline-block; /* Ensures proper button shape */
+          border: none;
+          transition: 0.3s ease-in-out;
+          text-align: center;
+          font-weight: bold;
+      }
+
+      /* Hover Effect */
+      .nav-button:hover {
+          background-color: white;
+          color: #008CBA;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Dummy content to allow scrolling */
+      .content {
+          margin-top: 80px; /* Push content down to avoid overlap with fixed navbar */
+          padding: 20px;
+          text-align: center;
+      }
+  
+    </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#" class="nav-button">Home</a>
+    <a href="#about" class="nav-button">About</a>
+    <a href="skills.html" class="nav-button">Skills</a>
+    <a href="contact.html" class="nav-button">Contact</a>
+</div>
+
+
+<div class="container">
+    <div class="left">
+        <img src="C:\Users\Aiswarya P M\OneDrive\Pictures\A1.jpg" class="full-image" alt="Your Image">
+    </div>
+    <div class="right">
+        <h1><b>AISWARYA P M</b></h1>
+        <p>ASSISTANT PROFESSOR.</p>
+
+        <div class="content justify text-grey padding-32" id="about">
+          <h2>About</h2>
+          <hr class=".opacity">
+          <p>I am Aiswarya. Assistant Professor at KMCT Institute of Technology and Management, Kuttippuram. Passionate about engaging students on all levels, enhancing their social experiences by encouraging group lessons and learning. Talented in using different teaching methods to reach out to students, including physical demonstrations, drawn illustrations and visual presentations.</p>
+        </div>
+    </div>
+
+</body>
+</html>
